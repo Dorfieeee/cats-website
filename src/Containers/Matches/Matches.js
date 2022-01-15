@@ -1,6 +1,6 @@
 import { Icon } from "@chakra-ui/icons";
 import { Box, Flex, Stack, Text, Heading, VStack } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import React from "react";
 import { SlidingImage, SlidingText } from "../../Components/sliders/index";
 import { useLocale } from "../../Components/LocaleProvider/LocaleProvider";
 import content from "./content";

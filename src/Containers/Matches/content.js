@@ -1,7 +1,7 @@
 import { GiSwordClash } from "react-icons/gi";
 import { FaGamepad, FaCampground } from "react-icons/fa";
 
-export default {
+const matchContent = {
     cs: [
         {
             title: "Týmová utkání",
@@ -37,3 +37,5 @@ export default {
         }
     ]
 };
+
+export default matchContent

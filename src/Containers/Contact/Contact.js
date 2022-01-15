@@ -9,7 +9,7 @@ export const Contact = () => {
     const { localeMode } = useLocale();
 
     return (
-        <Box as="section" bg="#7289DA" mt={10}>
+        <Box as="section" bg="#4e5d94" mt={10}>
             <Flex
                 justify={["center", "center", "space-between"]}
                 align="center"
@@ -41,21 +41,36 @@ export const Contact = () => {
                         <Text
                             as="i"
                             fontWeight="600"
-                            color="blue.900"
+                            color="#141214"
                             fontSize="1.1em"
                         >
                             {content[localeMode].sm}
                         </Text>
                     </Box>
                 </Flex>
-                <Link isExternal href="https://discord.com/invite/gNu2W3Q">
-                    <Button
+                <Link
+                    isExternal
+                    href="https://discord.com/invite/gNu2W3Q"
+                    _hover={{textDecation: "none"}}
+                    >
+                <Button
                         size="lg"
                         as="span"
                         color="black"
                         bg="white"
                         px="2.5rem"
                         h="4rem"
+                        borderWidth="3px"
+                        borderStyle="solid"
+                        textDecoration={"none"}
+                        _hover={{
+                            color: "white",
+                            bg: "#4e5d94",
+                            textDecoration: "none",
+                            borderWidth: "3px",
+                            borderStyle: "solid",
+                            borderColor: "#141214"
+                        }}
                     >
                         {content[localeMode].btn}
                     </Button>

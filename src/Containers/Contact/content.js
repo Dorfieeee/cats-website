@@ -1,10 +1,10 @@
-export default {
+const contactContent = {
     cs: {
         title: `Vstup na discord`,
         body: `Poznej nové lidi, utvoř nová přátelství a bav se u
   toho!`,
         sm: `Hledá tvůj klan výzvu? Dej nám vědět!`,
-        btn: `Přidej se k #CATS Discord!`
+        btn: `Vstup na #CATS Discord!`
     },
     en: {
         title: `Connect with the community`,
@@ -13,3 +13,5 @@ export default {
         btn: `Join the #CATS Discord!`
     }
 };
+
+export default contactContent

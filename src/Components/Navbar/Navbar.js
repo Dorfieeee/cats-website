@@ -17,7 +17,7 @@ import NavbarIcon from "./NavbarIcon";
 import "./Navbar.css";
 import { LocaleContext } from "../../Components/LocaleProvider/LocaleProvider";
 
-export default (props) => {
+const Navbar = (props) => {
     const { colorMode, toggleColorMode } = useColorMode();
     const { localeMode, toggleLocaleMode } = useContext(LocaleContext);
 
@@ -41,7 +41,7 @@ export default (props) => {
                         <Image
                             boxSize="90px"
                             objectFit="contain"
-                            src="https://i.ibb.co/7pw2wXF/CATS-weblogo.png"
+                            src="/CATS-weblogo.png"
                             pos="absolute"
                             alt="CATS logo"
                         />
@@ -94,3 +94,5 @@ export default (props) => {
         </Container>
     );
 };
+
+export default Navbar

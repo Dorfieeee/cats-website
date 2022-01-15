@@ -5,7 +5,7 @@ import { GameIcons } from "./Section/GameIcons";
 
 const year = new Date().getFullYear();
 
-export default {
+const aboutusContent = {
   cs: [
     {
       title: "My jsme",
@@ -16,7 +16,7 @@ export default {
     {
       title: "Od roku 2009",
       content: `... bojujeme bok po boku v herních titulech jako Call of Duty a
-      Battlefield. Nedržíme se striktně jedné hry a s příchodem nových titulů se vždy snažíme vyhodnotit, zda-li má smysl migrovat. I v roce 2021 stále trváme na tom, že BF4 je nejvíce vyvážený z hlediska vizuálního a herního požitku.`,
+      Battlefield. Nedržíme se striktně jedné hry a s příchodem nových titulů se vždy snažíme vyhodnotit, zda-li má smysl migrovat. I v roce ${year} stále trváme na tom, že BF4 je nejvíce vyvážený z hlediska vizuálního a herního požitku.`,
       small: `Battlefield 4 @ ${year}`,
       image: <GameIcons />
     },
@@ -37,7 +37,7 @@ export default {
     {
       title: "Since 2009",
       content: `... we fight side by side in game titles like Call of Duty and
-            Battlefield. We do not strictly adhere to one game, and with the advent of new titles, we always try to evaluate whether it makes sense to migrate. Even in 2021, we still insist that BF4 is the most balanced in terms of visual and gaming enjoyment. `,
+            Battlefield. We do not strictly adhere to one game, and with the advent of new titles, we always try to evaluate whether it makes sense to migrate. Even in ${year}, we still insist that BF4 is the most balanced in terms of visual and gaming enjoyment. `,
       small: `Battlefield 4 @ ${year}`,
       image: <GameIcons />
     },
@@ -49,3 +49,5 @@ export default {
     }
   ]
 };
+
+export default aboutusContent

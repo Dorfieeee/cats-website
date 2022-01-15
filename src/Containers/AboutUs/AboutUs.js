@@ -11,7 +11,7 @@ export const AboutUs = () => {
         <Box as="section" w="100%" h="100%" overflow="hidden">
             {content[localeMode].map((val, i) => {
                 return (
-                    <Section data={val} reverse={i % 2 !== 0} key={val.title} />
+                    <Section data={val} reverse={i % 2 !== 0 ? 1 : 0} key={val.title} />
                 );
             })}
         </Box>
